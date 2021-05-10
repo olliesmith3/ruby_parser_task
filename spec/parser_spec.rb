@@ -11,5 +11,13 @@ describe Parser do
       parser.create_list
       expect(parser.list).to eq(list_double)
     end
+
+    it 'creates a list and the logs stored on that list are a hash containing the onformation in the file. The file has one row.' do
+      dir = File.dirname(__FILE__)
+      file = File.open(File.join(dir, 'test_logs_1.log'))
+      parser = Parser.new(file)
+      parser.create_list
+      expect(parser.list.logs).to eq({"/help_page/1"=>["126.318.035.038"]})
+    end
   end
 end
