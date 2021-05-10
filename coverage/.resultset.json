@@ -1,6 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/ollie/Projects/ruby_parser_task/spec/list_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ollie/Projects/ruby_parser_task/lib/list.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
       "/Users/ollie/Projects/ruby_parser_task/spec/parser_spec.rb": {
         "lines": [
           1,
@@ -68,6 +92,7 @@
           1,
           5,
           5,
+          5,
           null,
           null,
           1,
@@ -95,20 +120,14 @@
           null,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/ollie/Projects/ruby_parser_task/lib/list.rb": {
-        "lines": [
+          null,
           1,
-          1,
-          1,
-          4,
+          5,
           null,
           null
         ]
       }
     },
-    "timestamp": 1620640722
+    "timestamp": 1620641303
   }
 }
