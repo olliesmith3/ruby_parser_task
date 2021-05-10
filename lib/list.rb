@@ -8,7 +8,8 @@ class List
 
   def print_visits
     @logs.each do |page_name, ip_addresses| 
-      @visits << "#{page_name} #{ip_addresses.length} visit "
+      plural = ip_addresses.length == 1 ? "" : "s"
+      @visits << "#{page_name} #{ip_addresses.length} visit#{plural} "
     end
     puts @visits.join
   end
