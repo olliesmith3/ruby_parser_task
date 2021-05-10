@@ -3,6 +3,8 @@
     "coverage": {
       "/Users/ollie/Projects/ruby_parser_task/spec/feature_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -10,28 +12,38 @@
           1,
           1,
           1,
-          2,
+          1,
+          1,
           null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          2,
           null,
           null,
           1,
           1,
           1,
           1,
-          2,
-          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
           null,
           null
         ]
       },
       "/Users/ollie/Projects/ruby_parser_task/lib/parser.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -54,6 +66,7 @@
           null,
           1,
           9,
+          2008,
           2008,
           2008,
           2008,
@@ -67,12 +80,10 @@
           null,
           13,
           null,
-          null,
           1006,
           990,
           null,
           16,
-          null,
           null,
           null,
           null,
@@ -84,6 +95,8 @@
       },
       "/Users/ollie/Projects/ruby_parser_task/lib/list.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -115,6 +128,8 @@
       },
       "/Users/ollie/Projects/ruby_parser_task/spec/list_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -138,6 +153,7 @@
           null,
           1,
           1,
+          null,
           1,
           2,
           null,
@@ -147,6 +163,8 @@
       },
       "/Users/ollie/Projects/ruby_parser_task/spec/parser_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           2,
@@ -197,6 +215,6 @@
         ]
       }
     },
-    "timestamp": 1620644751
+    "timestamp": 1620645107
   }
 }

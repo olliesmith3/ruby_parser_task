@@ -1,4 +1,6 @@
-require './lib/list.rb'
+# frozen_string_literal: true
+
+require './lib/list'
 
 class Parser
   attr_reader :list
@@ -6,7 +8,7 @@ class Parser
   def initialize(file, list_class = List)
     @file = file
     @list_class = list_class
-    @logs = Hash.new
+    @logs = {}
   end
 
   def create_list(is_unique = false)
@@ -19,9 +21,10 @@ class Parser
   private
 
   def read_logs(is_unique)
-    File.foreach(@file) do |line| 
-      split_line = line.split(" ")
-      page_name, ip_address = split_line[0], split_line[1]  
+    File.foreach(@file) do |line|
+      split_line = line.split(' ')
+      page_name = split_line[0]
+      ip_address = split_line[1]
       add_log(page_name, ip_address, is_unique)
     end
   end
@@ -33,16 +36,14 @@ class Parser
       else
         @logs[page_name] = [ip_address]
       end
-    else    
-      if @logs[page_name]
-        @logs[page_name] << ip_address
-      else
-        @logs[page_name] = [ip_address]
-      end
+    elsif @logs[page_name]
+      @logs[page_name] << ip_address
+    else
+      @logs[page_name] = [ip_address]
     end
   end
 
   def reset_logs
-    @logs = Hash.new
+    @logs = {}
   end
 end

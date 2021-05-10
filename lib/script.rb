@@ -1,5 +1,7 @@
-require './lib/parser.rb'
+# frozen_string_literal: true
 
-parser = Parser.new("webserver.log")
+require './lib/parser'
+
+parser = Parser.new('webserver.log')
 parser.create_list
 parser.create_list(is_unique = true)
