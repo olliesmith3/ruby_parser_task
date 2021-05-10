@@ -1,4 +1,4 @@
-require 'list'
+require './lib/list.rb'
 
 class Parser
   attr_reader :list
