@@ -4,7 +4,7 @@ A short challenge set as a tech test
 ## How to use
 
 ### The feature
-clone the repository, install the packages and run from the command line. You can use any log file of the same format.
+Clone the repository, install the packages and run from the command line. You can use any log file of the same format.
 ```
 $ git clone https://github.com/olliesmith3/ruby_parser_task.git
 $ cd ruby_parser_task
@@ -50,6 +50,7 @@ There are a lot of different ways to do this. As the order of the page visits is
 
 ##### Formatting to human readable format
 I have decided just to stick to the format provided in the instructions to stay in line with the brief.
+<img src="./readme_images/Output.png" alt="Output" width="100%"/>
 
 ##### Abstraction VS Mocking
 I have noticed now that I have not mocked the list class in some of the Parser tests. To do this I would have to find another way of unit testing the create_list method. This could be done by making the read_logs method public. However that would then go against the OO principle of abstraction as read_logs is not a feature that the user needs to have access to. As the tests only rely on the initialize method of list and none of its more complicated methods which would be likely to change in the future, I think it is best that I leave them as they are. However, if this were a longer challenge I would try to find a way around this perhaps by restructuring the classes responsibilities.
