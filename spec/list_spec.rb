@@ -12,5 +12,11 @@ describe List do
       list = List.new(logs)
       expect { list.print_visits }.to output("/help_page/1 2 visits \n").to_stdout
     end
+
+    it 'formats the logs into human readable format and sorted by visit count and then prints to the terminal. There are three logs, two of them to the same page' do
+      logs = {"/about"=>["061.945.150.735"], "/help_page/1"=>["126.318.035.038", "929.398.951.889"]}
+      list = List.new(logs)
+      expect { list.print_visits }.to output("/help_page/1 2 visits /about 1 visit \n").to_stdout
+    end
   end
 end
