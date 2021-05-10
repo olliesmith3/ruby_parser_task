@@ -12,6 +12,7 @@ class Parser
   def create_list(is_unique = false)
     read_logs(is_unique)
     @list = @list_class.new(@logs)
+    reset_logs
   end
 
   private
@@ -38,5 +39,9 @@ class Parser
         @logs[page_name] = [ip_address]
       end
     end
+  end
+
+  def reset_logs
+    @logs = Hash.new
   end
 end
