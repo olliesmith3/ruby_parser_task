@@ -1,6 +1,22 @@
 # ruby_parser_task
 A short challenge set as a tech test
 
+## How to use
+
+### The feature
+clone the repository, install the packages and run from the command line. You can use any log file of the same format.
+```
+$ git clone https://github.com/olliesmith3/ruby_parser_task.git
+$ cd ruby_parser_task
+$ bundle install
+$ ruby ./lib/script.rb webserver.log   
+```
+
+### The tests
+```
+$ rspec  
+```
+
 ## Plan
 
 #### Requirements
@@ -30,3 +46,6 @@ Having a look at the different options of reading files in ruby, the most effici
 
 ##### storing the information into structured data
 There are a lot of different ways to do this. As the order of the page visits is not important I will rule out an array of arrays. A hash with the page name as the key and the IP address as the value would not allow duplicates very easily so is not suited to this data. I think the best will be a hash with the page name as the key and an array of IP addresses as the value.
+
+##### formatting to human readable format
+I have decided just to stick to the format provided in the instructions to stay in line with the brief.
