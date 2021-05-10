@@ -14,7 +14,8 @@ class List
   private
 
   def format_visits
-    @logs.each do |page_name, ip_addresses| 
+    sorted_logs = @logs.sort_by { |page_name, ip_addresses| -ip_addresses.length }
+    sorted_logs.each do |page_name, ip_addresses| 
       add_visit(page_name, ip_addresses)
     end
   end
