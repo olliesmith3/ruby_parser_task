@@ -12,6 +12,7 @@ class Parser
   def create_list(is_unique = false)
     read_logs(is_unique)
     @list = @list_class.new(@logs)
+    @list.print_visits
     reset_logs
   end
 

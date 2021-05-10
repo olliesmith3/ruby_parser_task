@@ -1,6 +1,6 @@
 require 'parser'
 describe Parser do
-  let(:list_double) { double(:list) }
+  let(:list_double) { double(:list, print_visits: nil) }
   let(:list_class_double) { double(:list_class, new: list_double) }
 
   describe '#create_list' do
