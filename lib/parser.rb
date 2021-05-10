@@ -20,7 +20,11 @@ class Parser
     File.foreach(@file) do |line| 
       split_line = line.split(" ")
       page_name, ip_address = split_line[0], split_line[1]  
-      @logs[page_name] = [ip_address]
+      if @logs[page_name]
+        @logs[page_name] << ip_address
+      else
+        @logs[page_name] = [ip_address]
+      end
     end
   end
 end
