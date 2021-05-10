@@ -7,10 +7,20 @@ class List
   end
 
   def print_visits
-    @logs.each do |page_name, ip_addresses| 
-      plural = ip_addresses.length == 1 ? "" : "s"
-      @visits << "#{page_name} #{ip_addresses.length} visit#{plural} "
-    end
+    format_visits
     puts @visits.join
+  end
+
+  private
+
+  def format_visits
+    @logs.each do |page_name, ip_addresses| 
+      add_visit(page_name, ip_addresses)
+    end
+  end
+
+  def add_visit(page_name, ip_addresses)
+    plural = ip_addresses.length == 1 ? "" : "s"
+    @visits << "#{page_name} #{ip_addresses.length} visit#{plural} "
   end
 end
