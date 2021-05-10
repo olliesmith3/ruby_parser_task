@@ -38,9 +38,15 @@
           1,
           2,
           2,
+          2,
           null,
           null,
           1,
+          2,
+          2,
+          2,
+          2,
+          null,
           2,
           null,
           null
@@ -49,10 +55,14 @@
       "/Users/ollie/Projects/ruby_parser_task/lib/list.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1620638907
+    "timestamp": 1620639218
   }
 }
