@@ -1,3 +1,4 @@
+require 'parser'
 describe Parser do
   describe '#create_list' do
     it 'creates a list' do

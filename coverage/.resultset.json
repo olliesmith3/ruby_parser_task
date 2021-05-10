@@ -4,19 +4,43 @@
       "/Users/ollie/Projects/ruby_parser_task/spec/parser_spec.rb": {
         "lines": [
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
         ]
+      },
+      "/Users/ollie/Projects/ruby_parser_task/lib/parser.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ollie/Projects/ruby_parser_task/lib/list.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1620636882
+    "timestamp": 1620637130
   }
 }
