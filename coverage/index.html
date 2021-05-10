@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-10T12:11:47+01:00">2021-05-10T12:11:47+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-10T12:39:58+01:00">2021-05-10T12:39:58+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         119.34
+         117.67
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>121</b> relevant lines,
-    <span class="green"><b>121</b> lines covered</span> and
+    <b>123</b> relevant lines,
+    <span class="green"><b>123</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -73,11 +73,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6a4be720fbc168eaed321fb7536d4fe4a343f135" class="src_link" title="lib/list.rb">lib/list.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">29</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">18</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">13.44</td>
+            <td class="cell--number">13.83</td>
             
           </tr>
         
@@ -156,8 +156,8 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>18</b> relevant lines.
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -285,7 +285,7 @@
 
             
 
-            <code class="ruby">  def print_visits</code>
+            <code class="ruby">  def print_visits(is_unique = false)</code>
           </li>
         </div>
       
@@ -296,7 +296,7 @@
 
             
 
-            <code class="ruby">    format_visits</code>
+            <code class="ruby">    format_visits(is_unique)</code>
           </li>
         </div>
       
@@ -362,7 +362,7 @@
 
             
 
-            <code class="ruby">  def format_visits</code>
+            <code class="ruby">  def format_visits(is_unique)</code>
           </li>
         </div>
       
@@ -395,7 +395,7 @@
 
             
 
-            <code class="ruby">      add_visit(page_name, ip_addresses)</code>
+            <code class="ruby">      add_visit(page_name, ip_addresses, is_unique)</code>
           </li>
         </div>
       
@@ -439,7 +439,7 @@
 
             
 
-            <code class="ruby">  def add_visit(page_name, ip_addresses)</code>
+            <code class="ruby">  def add_visit(page_name, ip_addresses, is_unique)</code>
           </li>
         </div>
       
@@ -461,12 +461,56 @@
 
             
 
-            <code class="ruby">    @visits &lt;&lt; &quot;#{page_name} #{ip_addresses.length} visit#{plural} &quot;</code>
+            <code class="ruby">    if is_unique</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="covered" data-hits="13" data-linenumber="28">
+            <span class="hits">13</span>
+            
+
+            
+
+            <code class="ruby">      @visits &lt;&lt; &quot;#{page_name} #{ip_addresses.length} unique visit#{plural} &quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="30">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      @visits &lt;&lt; &quot;#{page_name} #{ip_addresses.length} visit#{plural} &quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 
@@ -477,7 +521,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="33">
             
             
 
@@ -701,7 +745,7 @@
 
             
 
-            <code class="ruby">    @list.print_visits</code>
+            <code class="ruby">    @list.print_visits(is_unique)</code>
           </li>
         </div>
       
@@ -1315,7 +1359,7 @@
 
             
 
-            <code class="ruby">    end.to output(&quot;/help_page/1 23 visits /contact 23 visits /home 23 visits /index 23 visits /about/2 22 visits /about 21 visits \n&quot;).to_stdout</code>
+            <code class="ruby">    end.to output(&quot;/help_page/1 23 unique visits /contact 23 unique visits /home 23 unique visits /index 23 unique visits /about/2 22 unique visits /about 21 unique visits \n&quot;).to_stdout</code>
           </li>
         </div>
       
@@ -1447,7 +1491,7 @@
 
             
 
-            <code class="ruby">    end.to output(&quot;/help_page/1 23 visits /contact 23 visits /home 23 visits /index 23 visits /about/2 22 visits /about 21 visits \n&quot;).to_stdout</code>
+            <code class="ruby">    end.to output(&quot;/help_page/1 23 unique visits /contact 23 unique visits /home 23 unique visits /index 23 unique visits /about/2 22 unique visits /about 21 unique visits \n&quot;).to_stdout</code>
           </li>
         </div>
       
